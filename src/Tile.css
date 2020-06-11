@@ -1,0 +1,15 @@
+.tile{
+    width: 30%;
+    height: 150px;
+    font-size: 60px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border: 1px solid red;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}
+p{
+    margin: 0;
+}
