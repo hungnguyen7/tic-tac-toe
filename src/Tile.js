@@ -7,7 +7,7 @@ export default class Tile extends React.Component{
     render(){
         return(
             <div className={`tile ${this.props.loc}`} onClick={()=>this.tileClick(this.props)}>
-                <p>{this.props.value}</p>
+                <p className='tile'>{this.props.value}</p>
             </div>
         )
     }

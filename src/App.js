@@ -245,11 +245,16 @@ class App extends React.Component{
           <Announcement winner={this.state.winner}/>
           <ResetButton reset={this.resetBoard} />
         </div>
-        {this.state.gameBoard.map((value, index)=>{
-           return(
-              <Tile key={index} loc={index} value={value} gameLoop={this.gameLoop} turn={this.state.turn}/>
-           )
-        })}
+        <div className="grid-container">
+          {this.state.gameBoard.map((value, index)=>{
+            return(
+              <div className='grid-item'>
+                <Tile key={index} loc={index} value={value} gameLoop={this.gameLoop} turn={this.state.turn}/>
+              </div>
+            )
+          })}
+        </div>
+        
       </div>
     )
   }

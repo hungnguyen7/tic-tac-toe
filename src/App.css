@@ -3,9 +3,13 @@ button{
   margin: 0 auto;
   margin-bottom: 10px;
 }
-
+h1{
+  color: white;
+  font-size: 30px;
+}
 .container{
-  width: 950px;
+  position: relative;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -13,4 +17,16 @@ button{
   text-align: center;
   width: 180px;
   margin: 0 auto;
+}
+
+.grid-container{
+  margin: 0 auto 0 auto;
+  display: grid;
+  width: 600px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+.grid-item{
+  background-color: wheat;
+  border: 0.5px solid black;
 }
