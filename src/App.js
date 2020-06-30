@@ -184,9 +184,9 @@ class App extends React.Component{
     else{
       let bestMoveValue = -100;
       for(let i = 0; i < board.length; i++){
-        let newBoardWithOCanBet = this.validMove(i, this.state.maxPlayer, board);
-        if(newBoardWithOCanBet){
-          let predictedMoveValue = this.minScore(newBoardWithOCanBet);
+        let newBoardWithXCanBet = this.validMove(i, this.state.maxPlayer, board);
+        if(newBoardWithXCanBet){
+          let predictedMoveValue = this.minScore(newBoardWithXCanBet);
           if(predictedMoveValue > bestMoveValue){
             bestMoveValue = predictedMoveValue;
           }
